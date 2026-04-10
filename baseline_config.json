@@ -1,0 +1,78 @@
+{
+  "feature_extractor": "vgg16",
+  "feature_dim": 4096,
+  "vgg_batch_size": 32,
+  "id2label": {
+    "0": "not_start",
+    "1": "document_start"
+  },
+  "knn_k": 5,
+  "seed": 42,
+  "metrics": {
+    "knn_validation": {
+      "accuracy": 0.8651399491094147,
+      "f1_macro": 0.8228600586809542,
+      "precision_1": 0.8837209302325582,
+      "recall_1": 0.9366197183098591
+    },
+    "xgb_validation": {
+      "accuracy": 0.9236641221374046,
+      "f1_macro": 0.9063453228266396,
+      "precision_1": 0.9568345323741008,
+      "recall_1": 0.9366197183098591
+    },
+    "efficientnet_validation": {
+      "accuracy": 0.9211195928753181,
+      "f1_macro": 0.9054474617575612,
+      "precision_1": 0.9702602230483272,
+      "recall_1": 0.9190140845070423
+    },
+    "vgg16_classifier_validation": {
+      "accuracy": 0.9287531806615776,
+      "f1_macro": 0.9130530973451327,
+      "precision_1": 0.9637681159420289,
+      "recall_1": 0.9366197183098591
+    },
+    "vgg_feature_lstm_validation": {
+      "accuracy": 0.9516539440203562,
+      "f1_macro": 0.9391764753797907,
+      "precision_1": 0.9616724738675958,
+      "recall_1": 0.971830985915493
+    },
+    "knn_test": {
+      "accuracy": 0.8729874776386404,
+      "f1_macro": 0.8399411207226826,
+      "precision_1": 0.8770685579196218,
+      "recall_1": 0.9512820512820512
+    },
+    "xgb_test": {
+      "accuracy": 0.9141323792486583,
+      "f1_macro": 0.8964495214572399,
+      "precision_1": 0.9275,
+      "recall_1": 0.9512820512820512
+    },
+    "efficientnet_test": {
+      "accuracy": 0.8962432915921288,
+      "f1_macro": 0.879004329004329,
+      "precision_1": 0.9368421052631579,
+      "recall_1": 0.9128205128205128
+    },
+    "vgg16_classifier_test": {
+      "accuracy": 0.9069767441860465,
+      "f1_macro": 0.8904714535479592,
+      "precision_1": 0.9378238341968912,
+      "recall_1": 0.9282051282051282
+    },
+    "vgg_feature_lstm_test": {
+      "accuracy": 0.9212880143112702,
+      "f1_macro": 0.9040388276787665,
+      "precision_1": 0.9261083743842364,
+      "recall_1": 0.9641025641025641
+    }
+  },
+  "torch_models": [
+    "efficientnet_b0",
+    "vgg16_classifier",
+    "vgg_feature_lstm"
+  ]
+}
